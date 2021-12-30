@@ -30,7 +30,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(width/2 , 200 , 5 , {isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 5 , {isStatic:true,restitution:0.2});
 	World.add(world, packageBody);
 	
 
